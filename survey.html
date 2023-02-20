@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Survey form</h1>
+    <h3 class="sub-title">Please spend few minutes to fill our survey form</h1>
+    <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" required>
+        
+        <label>Considering the complete experience with our company, how likely would you be to 
+            recommend our products to a friend or family?
+        </label>
+        <div class="scale">
+        <label><input type="radio" name="recommend" value="0">0</label>
+        <label><input type="radio" name="recommend" value="2">1</label>
+        <label><input type="radio" name="recommend" value="3">2</label>
+        <label><input type="radio" name="recommend" value="2">3</label>
+        <label><input type="radio" name="recommend" value="3">4</label>
+        </div>
+
+        <label>How did you learn about our website?</label>
+        <label><input type="radio" name="recommend" value="0">Newspaper</label>
+        <label><input type="radio" name="recommend" value="2">Social Media</label>
+        <label><input type="radio" name="recommend" value="3">Recommendation from a friend</label>
+        <label><input type="radio" name="recommend" value="2">Other</label>
+
+        <label>Who are you shopping for?</label>
+        <label><input type="radio" name="recommend" value="0">Friend</label>
+        <label><input type="radio" name="recommend" value="2">Family</label>
+        <label><input type="radio" name="recommend" value="3">Colleague</label>
+        <label><input type="radio" name="recommend" value="2">Other</label>
+
+
+        <label>Please rate our user interface and experience.
+        </label>
+        <div class="scale">
+            <label><input type="radio" name="recommend" value="0">0</label>
+            <label><input type="radio" name="recommend" value="2">1</label>
+            <label><input type="radio" name="recommend" value="3">2</label>
+            <label><input type="radio" name="recommend" value="2">3</label>
+            <label><input type="radio" name="recommend" value="3">4</label>    
+        </div>
+       
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments or suggestions"></textarea>
+        
+        <label>How would you rate our service?</label>
+        <select id="rating" name="rating">
+          <option value="">Select a rating</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+      </form>
+      
+</body>
+</html>
